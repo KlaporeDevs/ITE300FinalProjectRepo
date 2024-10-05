@@ -4,8 +4,4 @@ $user = "root";
 $password = "";
 $hostname = "localhost";
 $conn = "";
-
-Class Database{
-    
-}
 ?>
