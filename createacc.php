@@ -14,9 +14,9 @@ $password = '';
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo json_encode(["success" => 1, "message" => "Database connected successfully."]);
+    echo json_encode(["success" => 1, "message" => "Welcome to Glutton"]);
 } catch (PDOException $e) {
-    echo json_encode(["success" => 0, "message" => "Database connection failed: " . $e->getMessage()]);
+    echo json_encode(["success" => 0, "message" => "Failed To Connect The Server" . $e->getMessage()]);
     exit;
 }
 
